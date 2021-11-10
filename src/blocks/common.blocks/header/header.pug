@@ -1,4 +1,12 @@
 header
-	.logo
-		
-	nav Здесь будет header / Here will be the header
+	.logo_header
+		img(src="./images/logo.svg")
+	nav 
+		ul.menu_list
+			each name in ["О нас", "Услуги", "Вакансии", "Новости", "Соглашения"]
+				li
+					a(href="#")=name
+		button.sign_in(@click.prevent="onClick")
+			b Войти
+		button.sign_up(@click.prevent="onClick")
+			b Зарегестрироваться
