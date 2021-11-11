@@ -357,11 +357,15 @@ template {
 @charset "UTF-8";
 /** Загружаем шрифты **/
 @font-face {
-  font-family: "Roboto";
-  src: url(fonts/Roboto-Regular.ttf) format("truetype");
+  font-family: "Montserrat";
+  src: url(fonts/Montserrat-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(fonts/Quicksand-Regular.ttf) format("truetype");
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -403,7 +407,9 @@ h1 {
 }
 
 header {
+  display: flex;
   position: relative;
+  align-content: center;
   width: 100%;
   max-width: 1440px;
   height: 70px;
@@ -413,12 +419,52 @@ header {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
-header nav {
-  text-align: center;
-}
-
 header .logo_header {
   margin: 15px auto 15px 140px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav .menu_list {
+  position: relative;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav .sign_in {
+  border-radius: 22px;
+  width: 87px;
+  height: 34px;
+  background: #FFFFFF;
+  color: #BC9CFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+header nav .sign_up {
+  border-radius: 22px;
+  width: 196px;
+  height: 34px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: 0;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 footer {

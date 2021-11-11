@@ -14,7 +14,17 @@
     <div class="wrapper">
 <header>
   <div class="logo_header"><img src="./images/logo.svg"></div>
-  <nav>Здесь будет header / Here will be the header</nav>
+  <nav> 
+    <ul class="menu_list">
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Вакансии</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Соглашения</a></li>
+    </ul>
+    <button class="sign_in" @click.prevent="onClick"><b>Войти</b></button>
+    <button class="sign_up" @click.prevent="onClick"><b>Зарегестрироваться</b></button>
+  </nav>
 </header>
       <div class="container">
         <h1>First start Webpack</h1>
